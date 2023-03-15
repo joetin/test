@@ -9,16 +9,16 @@
 <FORM id="search" method=GET action="http://www.google.cn/search">
 <TABLE><tr><td>
 <A HREF="http://www.google.cn/"></A>
-<INPUT TYPE=text name=q size=18 maxlength=255 value="ÇëÊäÈë¹Ø¼ü×Ö">
+<INPUT TYPE=text name=q size=18 maxlength=255 value="è¯·è¾“å…¥å…³é”®å­—">
 <INPUT TYPE=hidden name=hl value="en">
-<INPUT type=submit name=btnG VALUE=" Google ËÑË÷ ">
+<INPUT type=submit name=btnG VALUE=" Google æœç´¢ ">
 </td></tr></TABLE>
 </FORM>
 <!-- Search Google -->
 %login-link%
 %loggedin%
 %upload-link%
-<div class=little>µ±Ç°ËùÔÚÄ¿Â¼</div>
+<div class=little>å½“å‰æ‰€åœ¨ç›®å½•</div>
 <div class=big>%folder%</div>
 <div class=body>
 %folder-comment%
@@ -26,10 +26,10 @@
 %files%
 </div>
 <div class=little>
-<a href="http://qun.qq.com/air/#13050043">Ãâ·ÑÏà²á°æ±¾£º %version%</a>
-<br>·şÎñÆ÷Ê±¼ä: %timestamp%
-<br>ÔÚÏßÊ±¼ä: %uptime%
-<br>Ö´ĞĞÊ±¼ä: %build-time%
+<a href="http://qun.qq.com/air/#13050043">å…è´¹ç›¸å†Œç‰ˆæœ¬ï¼š %version%</a>
+<br>æœåŠ¡å™¨æ—¶é—´: %timestamp%
+<br>åœ¨çº¿æ—¶é—´: %uptime%
+<br>æ‰§è¡Œæ—¶é—´: %build-time%
 </div>
 </body>
 </html>
@@ -61,31 +61,31 @@ img { border-style:none }
 .flag { font-weight:bold; font-size:8pt; background:white; color:red; text-align:center; border:1px solid red; }
 
 [login-link]
-<div style="float:right; padding:15px;"><a href="%encoded-folder%~login" class=button><img border=0 align=absbottom src="/~img27"> µÇÂ¼</a></div>
+<div style="float:right; padding:15px;"><a href="%encoded-folder%~login" class=button><img border=0 align=absbottom src="/~img27"> ç™»å½•</a></div>
 
 [loggedin]
 <div style="float:right; padding:15px;"><span class=button><img border=0 align=absbottom src="/~img27"> user: %user%</span></div>
 
 [upload-link]
-<div style="float:right; padding:15px;"><a href="%encoded-folder%~upload" class=button><img border=0 align=absbottom src="/~img32"> ÉÏ´«</a></div>
+<div style="float:right; padding:15px;"><a href="%encoded-folder%~upload" class=button><img border=0 align=absbottom src="/~img32"> ä¸Šä¼ </a></div>
 
 [up]
-<a class=big href="%parent-folder%"><img src="/~img14"> ÉÏÒ»Ä¿Â¼</a>
+<a class=big href="%parent-folder%"><img src="/~img14"> ä¸Šä¸€ç›®å½•</a>
 
 [nofiles]
-<div class=big>Ã»ÓĞÎÄ¼ş</div>
+<div class=big>æ²¡æœ‰æ–‡ä»¶</div>
 
 [files]
-<div class=little>¹²ÓĞ%number-folders% ÎÄ¼ş¼Ğ,  ´óĞ¡£º%total-size%</div>
+<div class=little>å…±æœ‰%number-folders% æ–‡ä»¶å¤¹,  å¤§å°ï¼š%total-size%</div>
 <table cellpadding=5>
-<th><a href="%encoded-folder%?sort=n"><span class=column>ÎÄ¼şÃû</span></a>
-<th><a href="%encoded-folder%?sort=s"><span class=column>´óĞ¡</span></a>
-<th><a href="%encoded-folder%?sort=t"><span class=column>ĞŞ¸Ä</span></a>
-<th class=column>µã»÷ 
+<th><a href="%encoded-folder%?sort=n"><span class=column>æ–‡ä»¶å</span></a>
+<th><a href="%encoded-folder%?sort=s"><span class=column>å¤§å°</span></a>
+<th><a href="%encoded-folder%?sort=t"><span class=column>ä¿®æ”¹</span></a>
+<th class=column>ç‚¹å‡» 
 %list%
 </table>
 <p class=right>
-<a class=little href='%encoded-folder%~files.lst'>ÎÄ¼şÇåµ¥</a>
+<a class=little href='%encoded-folder%~files.lst'>æ–‡ä»¶æ¸…å•</a>
 
 [file]
 <tr><td class=row>%new% <a href="%item-url%"> 
@@ -101,7 +101,7 @@ switch (  c.substr(  c.lastIndexOf('.')  ) .toLowerCase()  )
 </tr>
 
 [folder]
-<tr><td class=row>%new% <a href="%item-url%"><img align=top src="/~img_folder"> <b>%item-name%</b></a>%comment%<td align=center class=row><i> ÎÄ¼ş¼Ğ </i><td class="row right">%item-modified%<td class="row right">%item-dl-count%
+<tr><td class=row>%new% <a href="%item-url%"><img align=top src="/~img_folder"> <b>%item-name%</b></a>%comment%<td align=center class=row><i> æ–‡ä»¶å¤¹ </i><td class="row right">%item-modified%<td class="row right">%item-dl-count%
 
 [link]
 <tr><td class=row>%new% <a href="%item-url%"><img align=top src="/~img_link"> <b>%item-name%</b></a>%comment%<td colspan=3 align=center class=row><i>link</i>
@@ -118,7 +118,7 @@ switch (  c.substr(  c.lastIndexOf('.')  ) .toLowerCase()  )
 %content%
 <hr>
 <div style="font-family:tahoma, verdana, arial, helvetica, sans; font-size:8pt;">
-<a href="http://qun.qq.com/air/#13050043">Ãâ·ÑÏà²á°æ±¾£º %version%</a>
+<a href="http://qun.qq.com/air/#13050043">å…è´¹ç›¸å†Œç‰ˆæœ¬ï¼š %version%</a>
 <br>%timestamp%
 </div>
 </body>
@@ -138,9 +138,9 @@ On this server there is a limit on the number of <b>contemporaneous</b> download
 <br>This limit has been reached. Retry later.
 
 [unauthorized]
-<h1>Î´¾­ÊÚÈ¨</h1>
-ÕâÊÇÒ»¸öÊÜ±£»¤µÄ×ÊÔ´¡£
-<br>ÄúµÄÓÃ»§Ãû/ÃÜÂë²»Æ¥Åä¡£
+<h1>æœªç»æˆæƒ</h1>
+è¿™æ˜¯ä¸€ä¸ªå—ä¿æŠ¤çš„èµ„æºã€‚
+<br>æ‚¨çš„ç”¨æˆ·å/å¯†ç ä¸åŒ¹é…ã€‚
 
 [deny]
 <h1>Unallowed</h1>
@@ -162,26 +162,26 @@ This resource is not accessible.
 <div style="float:right; padding:15px;">
 <script language="javascript">
 var s1, s2;
-if (window.parent.progress) s1 = '" target=_parent', s2 = '¹Ø±Õ';
-else s1 = '+progress"', s2= '´ò¿ª';
-document.write('<a href="%encoded-folder%~upload'+s1+' class=button onClick="if (frm.upbtn.disabled) return false;"><img border=0 align=absbottom src="/~img10"> '+s2+' ÏÔÊ¾ÉÏ´«½ø¶È</a>');
+if (window.parent.progress) s1 = '" target=_parent', s2 = 'å…³é—­';
+else s1 = '+progress"', s2= 'æ‰“å¼€';
+document.write('<a href="%encoded-folder%~upload'+s1+' class=button onClick="if (frm.upbtn.disabled) return false;"><img border=0 align=absbottom src="/~img10"> '+s2+' æ˜¾ç¤ºä¸Šä¼ è¿›åº¦</a>');
 </script>
 </div>
-<div style="float:right; padding:15px;"><a href="%encoded-folder%" target=_parent class=button><img border=0 align=absbottom src="/~img21"> È¡ÏûÉÏ´«</a></div>
-<div style="margin-top:60px" class=little>µ±Ç°ËùÔÚÄ¿Â¼</div>
+<div style="float:right; padding:15px;"><a href="%encoded-folder%" target=_parent class=button><img border=0 align=absbottom src="/~img21"> å–æ¶ˆä¸Šä¼ </a></div>
+<div style="margin-top:60px" class=little>å½“å‰æ‰€åœ¨ç›®å½•</div>
 <div class=big>%folder%</div>
 <div class=body>
 <form name=frm action="%encoded-folder%" target=_parent method=post enctype="multipart/form-data" onSubmit="frm.upbtn.disabled=true; return true;">
 %upload-files%
-<input name=upbtn type=submit value="ÉÏ´«ÎÄ¼ş">
+<input name=upbtn type=submit value="ä¸Šä¼ æ–‡ä»¶">
 </form>
-<br>ÌáÊ¾£º<a target=_blank href="/~progress">µã»÷ÕâÀï´ò¿ªÉÏ´«½ø¶È</a>.
+<br>æç¤ºï¼š<a target=_blank href="/~progress">ç‚¹å‡»è¿™é‡Œæ‰“å¼€ä¸Šä¼ è¿›åº¦</a>.
 </div>
 <div class=little>
-<a href="http://qun.qq.com/air/#13050043">Ãâ·ÑÏà²á°æ±¾£º %version%</a>
-<br>·şÎñÆ÷Ê±¼ä: %timestamp%
-<br>ÔÚÏßÊ±¼ä: %uptime%
-<br>¿ÉÓÃ¿Õ¼ä: %diskfree%
+<a href="http://qun.qq.com/air/#13050043">å…è´¹ç›¸å†Œç‰ˆæœ¬ï¼š %version%</a>
+<br>æœåŠ¡å™¨æ—¶é—´: %timestamp%
+<br>åœ¨çº¿æ—¶é—´: %uptime%
+<br>å¯ç”¨ç©ºé—´: %diskfree%
 </div>
 </body>
 </html>
@@ -197,7 +197,7 @@ document.write('<a href="%encoded-folder%~upload'+s1+' class=button onClick="if 
 </head>
 <body>
 %loggedin%
-<div style="margin-top:60px" class=little>µ±Ç°ËùÔÚÄ¿Â¼</div>
+<div style="margin-top:60px" class=little>å½“å‰æ‰€åœ¨ç›®å½•</div>
 <div class=big>%folder%</div>
 <div class=body>
 %uploaded-files%
@@ -205,10 +205,10 @@ document.write('<a href="%encoded-folder%~upload'+s1+' class=button onClick="if 
 <a href="%encoded-folder%" target=_parent class=big><img border=0 align=absbottom src="/~img14"> Back to the folder</a>
 </div>
 <div class=little>
-<a href="http://qun.qq.com/air/#13050043">Ãâ·ÑÏà²á°æ±¾£º %version%</a>
-<br>·şÎñÆ÷Ê±¼ä: %timestamp%
-<br>ÔÚÏßÊ±¼ä: %uptime%
-<br>¿ÉÓÃ¿Õ¼ä: %diskfree%
+<a href="http://qun.qq.com/air/#13050043">å…è´¹ç›¸å†Œç‰ˆæœ¬ï¼š %version%</a>
+<br>æœåŠ¡å™¨æ—¶é—´: %timestamp%
+<br>åœ¨çº¿æ—¶é—´: %uptime%
+<br>å¯ç”¨ç©ºé—´: %diskfree%
 </div>
 </body>
 </html>
@@ -248,18 +248,18 @@ body { padding:2px; }
 </style>
 </head>
 <body>
-<div class=big>ÎÄ¼şÉÏ´«½ø¶È</div>
-×Ô¶¯Ë¢ĞÂÊ±¼ä: 3 Ãë
+<div class=big>æ–‡ä»¶ä¸Šä¼ è¿›åº¦</div>
+è‡ªåŠ¨åˆ·æ–°æ—¶é—´: 3 ç§’
 <br><br><img src="/~img_graph190x40" style="border:white outset 2px;">
 <div class=body>
 %progress-files%
 </div>
-<div class=little>ÔÚÏßÊ±¼ä: %uptime%</div>
+<div class=little>åœ¨çº¿æ—¶é—´: %uptime%</div>
 </body>
 </html>
 
 [progress-nofiles]
-<div class=big>Ä¿Ç°Ã»ÓĞÈÎºÎÎÄ¼şÉÏ´«²Ù×÷</div>
+<div class=big>ç›®å‰æ²¡æœ‰ä»»ä½•æ–‡ä»¶ä¸Šä¼ æ“ä½œ</div>
 
 [progress-upload-file]
 <span class=flag>&nbsp;up&nbsp;</span>
